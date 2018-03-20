@@ -79,24 +79,41 @@ public class Main {
     }
 
     public static void zadanie3() {
-        //char[] toCharArray()
-        //byte[] getBytes()
-        //boolean equals(String str)
-        //boolean equalsIgnoreCase(String str)
-        //int campareTo(String str)
-        //int campareToIgnoreCase(String str)
-        //int indexOf(int i)
-        //int indexOf(String str)
-        //int lastIndexOf(int i)
-        //int lastIndexOf(String str)
-        //String substring(int startString)
-        //String substring(int startString, int stopString)
-        //String replace(char orginal, char zamiennik)
-        //String trim()
-        //String toLowerCase()
-        //String toUpperCase()
-        //String[] split(String regex, int limit)
-        //String[] split(String regex)
+
+        String slowo1 = "Hello";
+        String slowo2 = "World";
+        String slowo3 = "Programowanie";
+        String slowo4 = "Obiektowe";
+        Boolean a = true;
+        Boolean b = false;
+        int xdd=15;
+            
+
+        System.out.println(slowo1.toCharArray());       //kopiuje lancuch jako tablice char
+
+        System.out.println(slowo1.getBytes());          //zamienia na tablice bajtow
+
+        System.out.println(slowo1.equals(slowo2));      //porownuje dwa stringi
+
+        System.out.println(slowo1.equalsIgnoreCase(slowo2));   //porownuje pomijajac wielkosc znakow
+
+        System.out.println(slowo1.compareTo(slowo2));  //porownuje ciag znakow do innego
+
+        System.out.println(slowo1.indexOf('o'));            //zwraca indeks pierwszego wystapienia obiektu
+
+        System.out.println(slowo1.lastIndexOf('o'));        //zwraca indeks ostatniego wystapienia obiektu
+
+        System.out.println(slowo3.substring(3));        //zwraca czesc ciagu znaku od podanego indeksu startowego
+
+        System.out.println(slowo3.substring(1, 4));    //zwraca czesc ciagu znaku od podanego indeksu startowego do koncowego
+
+        System.out.println(slowo3.replace('o', 'k'));   //zamienia podana litere na inna
+
+        System.out.println(slowo2.trim());              //usuwa biale znaki
+
+        System.out.println(slowo2.toLowerCase());       //zamienia na male litery
+
+        System.out.println(slowo2.toUpperCase());       //zamienia na duze litery
     }
 
     public static void main(String[] args) {
@@ -118,7 +135,7 @@ public class Main {
                 break;
 
             case 3:
-
+                zadanie3();
                 break;
 
             case 4:
